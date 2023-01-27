@@ -1,17 +1,11 @@
 import React from "react";
 import { View, Text, StyleSheet } from "react-native";
+import titulo from  "../estilos/estiloTitulo"
 
 export default function Title(){
     return(
-        <View>
+        <View style={titulo.caixaMenu}>
             <Text style={titulo.menu}>ONEBITHEALTH</Text>
         </View>
     );
 }
-
-const titulo = StyleSheet.create({
-    menu: {
-        fontSize: 22,
-        color: 'red',
-    },
-});
