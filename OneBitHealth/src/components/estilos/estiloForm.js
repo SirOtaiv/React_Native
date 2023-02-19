@@ -42,6 +42,18 @@ const formulario = StyleSheet.create({
         alignSelf: 'center',
         marginTop: 10,
     },
+    frmBotao2: {
+        borderRadius: 50,
+        alignItems: 'center',
+        justifyContent: 'center',
+        width: '90%',
+        backgroundColor: '#ff0043',
+        paddingBottom: 14,
+        paddingTop: 14,
+        alignSelf: 'center',
+        marginTop: 10,
+//        display: 'none',
+    },
     frmTextoBotao: {
         fontSize: 20,
         color: '#fff',
