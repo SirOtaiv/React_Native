@@ -13,10 +13,10 @@ export default function App() {
     <NavigationContainer>
       <View style={styles.container}>
         <Stack.Navigator>
-          <Stack.Screen name='main' component={Form}/>
-          <Stack.Screen name='historico' component={PageHist}/>
+          <Stack.Screen name='Calculadora de IMC' component={Form} options={{title: '', headerShown: false}}/>
+          <Stack.Screen name='Historico' component={PageHist}/>
         </Stack.Navigator>
-      </View>
+        </View>
     </NavigationContainer>
 )}
 
@@ -25,5 +25,9 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#dcdcdc',
+  },
+  navegacao: {
+    display: 'none',
+    color: 'red',
   },
 });

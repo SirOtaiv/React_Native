@@ -68,7 +68,7 @@ export default function Form()  {
                 <TouchableOpacity onPress={() => validadorImc()} style={formulario.frmBotao}>
                     <Text style={formulario.frmTextoBotao}>{textButton}</Text>
                 </TouchableOpacity>
-                <TouchableOpacity onPress={() => navegacao.navigate('historico')} style={formulario.frmBotao2}>
+                <TouchableOpacity onPress={() => navegacao.navigate('Historico')} style={formulario.frmBotao2}>
                     <Text style={formulario.frmTextoBotao}>Histórico</Text>
                 </TouchableOpacity>
             </View>

@@ -10,7 +10,7 @@ const criarTabela = () => {
   });
 };
 
-const addDados = (name, peso) => {
+export const addDados = (name, peso) => {
   dbCon.transaction(tx => {
     tx.executeSql('INSERT INTO hist (nome, peso) VALUES (?, ?);', [name, peso]);
   });
