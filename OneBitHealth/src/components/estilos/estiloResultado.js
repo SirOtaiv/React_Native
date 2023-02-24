@@ -5,8 +5,7 @@ import { StyleSheet } from 'react-native';
 const resposta = StyleSheet.create({
     rsResposta: {
         flex: 1,
-        marginTop: 15,
-        paddingTop: 60,
+        paddingTop: 20,
         borderRadius: 50,
         alignItems: 'center',
         width: '100%',

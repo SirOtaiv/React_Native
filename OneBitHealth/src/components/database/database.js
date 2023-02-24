@@ -16,10 +16,16 @@ export const addDados = (name, peso) => {
   });
 };
 
-const rmvDados = () => {
-  dbCon.transaction(tx => {
-    tx.executeSql('delete from hist')
-  })
+export function rmvDados() {
+  return new Promise((resolve, reject) => {
+    dbCon.transaction((tx) => {
+      tx.executeSql('DELETE FROM hist;', [], (_, resultado) => {
+        resolve(resultado)
+      }, (_, error) => {
+        reject(error)
+      });
+    });
+  });
 }
 
 export const listarHist = () => {
